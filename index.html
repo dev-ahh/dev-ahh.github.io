@@ -10,7 +10,7 @@
 	<meta name="keywords"  content="atacama, hydrogen, hub" />
 	<meta name="Resource-type" content="Document" />
 
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
@@ -22,8 +22,46 @@
 
 		
 
-<div class="menu-ahh">
-		<a href="#home"><img src="./img/ahh-logo.svg" class="logo-ahh-gris"></a>		
+<div class="menu-ahh">	
+		<header class="navigation">
+			<nav class="navbar fixed-top navbar-expand-lg navigation mt-5" id="navbar">
+			  <div class="container">
+				<a class="navbar-brand" href="#home"><img src="./img/ahh-logo.svg"
+					alt="Atacama Hydrogen Hub" class="img-fluid logo-ahh-gris"></a>
+		  
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+				  aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="ti-menu"></span>
+				</button>
+		  
+				<div class="collapse navbar-collapse text-center" id="navbarsExample09">
+				  <ul class="navbar-nav ml-auto">
+
+					<li class="nav-item">
+					  	<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#process">Process</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#project">Project</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">EN | ESP</a>
+					</li>
+
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		  </header>	
 </div>
 
 <div id="fullpage">
@@ -58,9 +96,11 @@
 <script type="text/javascript" src="./js/fullpage.js"></script>
 <script type="text/javascript" src="./js/fullpage.parallax.min.js"></script>
 <script type="text/javascript" src="./js/fullpage.extensions.min.js"></script>
-<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>
 <script type="text/javascript" src="./js/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
@@ -86,10 +126,12 @@
 		},
 		onLeave: function(origin, destination, direction){
 			if(destination.index == 1 || destination.index == 2 || destination.index == 3 || destination.index == 4 ){
-				$('.logo-ahh-gris').attr("src","./img/ahh-logo-blanco.svg");				
+				$('.logo-ahh-gris').attr("src","./img/ahh-logo-blanco.svg");		
+				$('.nav-link').addClass('nav-link-whitebg');	
 			}
 			if(destination.index == 0 ){
-				$('.logo-ahh-gris').attr("src","./img/ahh-logo.svg");				
+				$('.logo-ahh-gris').attr("src","./img/ahh-logo.svg");		
+				$('.nav-link').removeClass('nav-link-whitebg');		
 			}
 			if(destination.index == 0 || destination.index == 1 || destination.index == 2 || destination.index == 3){
 				$('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background','#333')
