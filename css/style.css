@@ -100,16 +100,13 @@ h5{
  }
  #section1 .fp-bg{
     background-image: url(../img/);
-    background-size: 60%;
-	background-position: center;	
-	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 80%;
  }
  #section2 .fp-bg{
-    background-image: url(../img/);
-    background-size: 30%;
-    background-position: bottom;
-	background-position-x: 75%;
-	background-repeat: no-repeat;
+    background-image: url(../img/process-ahh-bg.jpg);
+	background-size: cover;
+	background-position: center 80%;
  }
 
  #section4 h2{

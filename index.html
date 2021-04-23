@@ -142,7 +142,8 @@
 		parallaxKey: 'Z2l0aHViLmlvXzZmMGNHRnlZV3hzWVhnPTB4cA==',
 		parallaxOptions: {
 			type: 'reveal',
-			percentage: 85
+			percentage: 62,
+			property: 'translate'
 		},
 		scrollingSpeed: 1250,
 		autoScrolling: true,
@@ -154,11 +155,11 @@
 			}
 		},
 		onLeave: function(origin, destination, direction){
-			if(destination.index == 1 || destination.index == 2 || destination.index == 3 || destination.index == 4 ){
+			if(destination.index == 1 || destination.index == 3 || destination.index == 4 ){
 				$('.logo-ahh-gris').attr("src","./img/ahh-logo-blanco.svg");		
 				$('.nav-link').addClass('nav-link-whitebg');	
 			}
-			if(destination.index == 0 ){
+			if(destination.index == 0 || destination.index == 2 ){
 				$('.logo-ahh-gris').attr("src","./img/ahh-logo.svg");		
 				$('.nav-link').removeClass('nav-link-whitebg');		
 			}
