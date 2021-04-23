@@ -4,6 +4,7 @@
 	// Document Ready Function
 	// -----------------------------
 	$(document).ready(function(){
+
 		// google map
 		window.marker = null;
 		function initialize() {
