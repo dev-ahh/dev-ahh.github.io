@@ -104,6 +104,10 @@ h4{
 h5{
 
 }
+
+.mapa{
+	width: 100%;
+}
  .section{
 	 text-align:center;
  }
@@ -194,6 +198,7 @@ h5{
 	text-align: left;
 	margin-top: 40px;
 }
+
 
 p a {
 	color: #fff;

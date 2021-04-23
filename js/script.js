@@ -1,4 +1,4 @@
-	$(document).ready(function(){
+/* 	$(document).ready(function(){
 
 		// google map
 		window.marker = null;
@@ -79,4 +79,4 @@
 			google.maps.event.addDomListener(window, 'load', initialize);
 			console.log("Mapa Inicializado");
 		}
-	});
+	}); */
