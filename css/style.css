@@ -113,10 +113,11 @@ h5{
 	 background-size: cover;
      background-position: center 80%;
  }
- #section1 .fp-bg{
-    background-image: url(../img/);
+ #section3 .fp-bg{
+    background-image: url(../img/process-overview.svg);
 	background-size: cover;
-	background-position: center 80%;
+	background-position: bottom 80%;
+
  }
  #section2 .fp-bg{
     background-image: url(../img/process-ahh-bg.jpg);
