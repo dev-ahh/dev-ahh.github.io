@@ -312,5 +312,11 @@ p a:hover {
 	.rounded-process-div {
 		margin-top: 6rem !important;
 	}
+	.map-margin{
+		height: 150px;
+	}
+	#map {
+		height: 200px;
+	}
 
 }
