@@ -1,5 +1,5 @@
 	$(document).ready(function(){
-		console.log("Mapa Inicializado");
+
 		// google map
 		window.marker = null;
 		function initialize() {
@@ -77,5 +77,6 @@
 		var google_map_canvas = $('#map');
 		if (google_map_canvas.length) {
 			google.maps.event.addDomListener(window, 'load', initialize);
+			console.log("Mapa Inicializado");
 		}
 	});
