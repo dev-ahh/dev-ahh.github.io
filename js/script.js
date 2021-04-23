@@ -1,8 +1,3 @@
-// Main Script
-(function ($) { 'use strict';
-	// -----------------------------
-	// Document Ready Function
-	// -----------------------------
 	$(document).ready(function(){
 		// google map
 		window.marker = null;
@@ -83,5 +78,3 @@
 			google.maps.event.addDomListener(window, 'load', initialize);
 		}
 	});
-
-})(jQuery);
