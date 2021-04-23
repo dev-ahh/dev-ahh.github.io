@@ -155,6 +155,11 @@ h5{
 	-webkit-text-fill-color: transparent;
 }
 
+.social-media {
+	height: 45px;
+	width: 45px;
+}
+
 .navbar-toggler {
 	border: none !important;
 	outline: none !important;
@@ -177,6 +182,54 @@ h5{
 	font-size: 1.5rem;
 	color: #fff;
 	border-radius: 30px;
+}
+
+#map {
+	height: 250px;
+}
+
+.contact-information {
+	position: absolute;
+    z-index: 2;
+	text-align: left;
+	margin-top: 40px;
+}
+
+p a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+p a:hover {
+	background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-transition: all ease-in-out 250ms;
+    -moz-transition: all ease-in-out 250ms;
+    -o-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
+}
+
+#section4 p {
+	color: #fff;
+	font-size: 11px;
+}
+
+.direccion p {
+	font-size: 13px !important;
+}
+
+.disclaimer p {
+	font-weight: 300;
+}
+
+.map-margin {
+	height: 250px;
+	background: #fff;
+}
+
+.background-dark {
+	background: #383838;
 }
 
 
