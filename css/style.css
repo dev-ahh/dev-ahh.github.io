@@ -157,7 +157,8 @@ h5{
 
 .social-media {
 	height: 45px;
-	width: 45px;
+	width: 45px;	
+	cursor: pointer;
 }
 
 .navbar-toggler {
