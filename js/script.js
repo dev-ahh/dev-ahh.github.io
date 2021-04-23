@@ -1,4 +1,5 @@
 	$(document).ready(function(){
+		console.log("Mapa Inicializado");
 		// google map
 		window.marker = null;
 		function initialize() {
