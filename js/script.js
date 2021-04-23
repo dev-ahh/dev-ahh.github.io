@@ -79,5 +79,4 @@
 			google.maps.event.addDomListener(window, 'load', initialize);
 			console.log("Mapa Inicializado");
 		}
-		setTimeout(function() { google.maps.event.trigger(map, 'resize') }, 600);
 	});
