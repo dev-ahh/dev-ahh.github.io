@@ -115,8 +115,9 @@ h5{
  }
  #section3 .fp-bg{
     background-image: url(../img/process-overview.svg);
-	background-size: cover;
-	background-position: right bottom 80%;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: right 20% bottom 10% ;
 
  }
  #section2 .fp-bg{
