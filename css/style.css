@@ -126,6 +126,12 @@ h5{
 
 }
 
+.menu-icon {
+	background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
 	background: #383838;
 }
