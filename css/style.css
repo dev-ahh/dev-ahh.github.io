@@ -145,6 +145,10 @@ h5{
 	width: 175px;
 }
 
+.rounded-process {
+	border-radius: 30px;
+}
+
 .menu-icon {
 	background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
 	-webkit-background-clip: text;
