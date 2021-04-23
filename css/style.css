@@ -188,10 +188,6 @@ h5{
 	border-radius: 30px;
 }
 
-#map {
-	height: 250px;
-}
-
 .contact-information {
 	position: absolute;
     z-index: 2;
@@ -318,9 +314,6 @@ p a:hover {
 	}
 	.map-margin{
 		height: 150px;
-	}
-	#map {
-		height: 200px;
 	}
 
 }
