@@ -141,7 +141,7 @@ h5{
  }
  #section2 .fp-bg{
 	background-color: #fff;
-    background-image: url(../img/process-ahh-bg.jpg);
+    background-image: url(../img/process-ahh-bg2.jpg);
 	background-size: cover;
 	background-position: center 80%;
  }
@@ -279,6 +279,25 @@ p a:hover {
     -moz-transition: all ease-in-out 250ms;
     -o-transition: all ease-in-out 250ms;
     transition: all ease-in-out 250ms;
+}
+
+#section5 {
+	background: linear-gradient(to left, #00d3e7 0%, #79de9e 60%, #d9ff77 100%); !important;
+}
+
+.main-producers-h1{
+	z-index: 3;
+	position: fixed;
+	top: 150px;
+	left: 250px;
+}
+
+.main-producers-p{
+	z-index: 3;
+	position: fixed;
+	top: 350px;
+	left: 250px;
+	width: 300px;
 }
 
 

@@ -1,18 +1,18 @@
 var svgMapDataPersonHeight = {
   data: {
     person: {
-      name: 'Durchschnitt',
-      format: '{0} cm',
+      name: 'Data 1',
+      format: '{0}',
       floatingNumbers: 1
     },
     male: {
-      name: 'Mann',
-      format: '{0} cm',
+      name: 'Data 2',
+      format: '{0}',
       floatingNumbers: 1
     },
     female: {
-      name: 'Frau',
-      format: '{0} cm',
+      name: 'Data 3',
+      format: '{0}',
       floatingNumbers: 1
     }
   },

@@ -129,7 +129,7 @@
 .svgMap-tooltip {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   position: absolute;
-  z-index: 2;
+  z-index: 100;
   border-radius: 2px;
   background: #fff;
   transform: translate(-50%, -100%);
@@ -137,6 +137,8 @@
   display: none;
   pointer-events: none;
   min-width: 60px;
+  font-family: 'Jost', sans-serif;
+	font-weight: 500;
 }
 
 .svgMap-tooltip.svgMap-tooltip-flipped {
@@ -178,6 +180,7 @@
 .svgMap-tooltip .svgMap-tooltip-title {
   white-space: nowrap;
   font-size: 18px;
+  font-weight: 700;
   line-height: 28px;
   padding: 0 0 8px;
   text-align: center;
@@ -187,7 +190,6 @@
   white-space: nowrap;
   text-align: center;
   font-size: 14px;
-  color: #777;
   margin: -5px 0 0;
 }
 

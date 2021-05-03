@@ -791,7 +791,7 @@ function svgMapWrapper(svgPanZoom) {
 
     // Init pan zoom
     this.mapPanZoom = svgPanZoom(this.mapImage, {
-      zoomEnabled: true,
+      zoomEnabled: false,
       fit: true,
       center: true,
       minZoom: this.options.minZoom,
