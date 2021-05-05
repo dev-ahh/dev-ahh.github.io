@@ -28,7 +28,7 @@ function svgMapWrapper(svgPanZoom) {
       // Data colors
       colorMax: '#5bd27f',
       colorMin: '#00d3e7',
-      colorNoData: '#fff',
+      colorNoData: '#cacaca',
 
       // The flag type can be 'image' or 'emoji'
       flagType: 'image',
@@ -788,6 +788,7 @@ function svgMapWrapper(svgPanZoom) {
 
     // Expose instance
     var me = this;
+    
 
     // Init pan zoom
     this.mapPanZoom = svgPanZoom(this.mapImage, {
@@ -829,6 +830,7 @@ function svgMapWrapper(svgPanZoom) {
 
     // Initial zoom statuses
     this.setControlStatuses();
+    
   };
 
   // Create the tooltip content
@@ -878,7 +880,7 @@ function svgMapWrapper(svgPanZoom) {
     if (!this.options.data.values[countryID]) {
       this.createElement(
         'div',
-        'svgMap-tooltip-no-data',
+        'svgMap-tooltip-no-data d-none-tooltip',
         tooltipContent
       ).innerHTML = this.options.noDataText;
     } else {
@@ -933,6 +935,8 @@ function svgMapWrapper(svgPanZoom) {
     }
     this.mapPanZoom[direction == 'in' ? 'zoomIn' : 'zoomOut']();
   };
+
+  
 
   // Map paths
 

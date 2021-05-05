@@ -270,7 +270,21 @@ p a:hover {
 	margin-bottom: 125px;
 }
 
-.about-member:hover > h2 {
+.about-member > button {
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+}
+
+.about-member > button:focus {
+	outline: none;
+  }
+
+.about-member > button {
+	cursor: pointer;
+}  
+
+.about-member > button:hover > h2 {
 	background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
 	transform: scale(1.025);
 	-webkit-background-clip: text;
