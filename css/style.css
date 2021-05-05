@@ -244,13 +244,17 @@ p a:hover {
 	text-decoration: none;
 }
 
-#section4 p {
+#section4 p, .direccion-p {
 	color: #fff;
 	font-size: 11px;
 }
 
-.direccion p {
+.direccion {
 	font-size: 13px !important;
+}
+
+.direccion-p {
+	font-size: 11px !important;
 }
 
 .disclaimer p {
