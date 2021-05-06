@@ -378,6 +378,38 @@
 			</div>
 	</div>
 
+		<!-- Project -->
+		<div class="section" id="section6">
+			<div class="fp-bg"></div>
+			<div class="container d-flex h-25 text-center">
+			</div>
+			<div class="container d-flex h-75 text-center pb-5">
+				<div class="row justify-content-center ">
+					<div class="row">
+						<div class="col-lg-6 ">
+							<h1 class="mb-5 text-dark text-left" style="font-size: 65px;">Supply & Demand</br>
+								Projections</h1>
+							<p class="text-justify">By 2050, 18% of the world energy demand is expected to be supplied by hydrogen. Hydrogen will be transported through various  vectors adapted to different applications such as energy generation, transportation, chemical, etc.</p>
+							<img src="./img/supply.jpg" class="img-fluid mt-3" alt="Supply & Demand">
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+		<!-- Project -->
+		<div class="section" id="section7">
+			<div class="fp-bg"></div>
+			<div class="container d-flex h-25 text-center">
+			</div>
+			<div class="container d-flex h-75 text-center pb-5">
+				<div class="row justify-content-center ">
+					<div class="row">
+					</div>
+				</div>
+			</div>
+	</div>
+
 	<!-- Contact -->
 	<div class="section background-dark" id="section4">
 			<div class="fp-bg"></div>
@@ -452,7 +484,7 @@
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
-		anchors: ['home', 'about', 'process', 'project', 'contact'],
+		anchors: ['home', 'about', 'process', 'project', 'supply', 'energy', 'contact'],
 		licenseKey: '47E5E01E-38AE47EB-BB1C4B0C-E6561B86',
         verticalCentered: false,
 		navigation:true,
@@ -471,7 +503,7 @@
 		afterLoad: function(origin, destination, direction){
 					},
 		onLeave: function(origin, destination, direction){
-			if(destination.index == 1 || destination.index == 3 || destination.index == 4  || destination.index == 5 ){
+			if(destination.index == 1 || destination.index == 3 || destination.index == 4  || destination.index == 5 || destination.index == 6 || destination.index == 7 ){
 				$('.logo-ahh-gris').attr("src","./img/ahh-logo-blanco.svg");		
 				$('.nav-link').addClass('nav-link-whitebg');						
 				$('.demo-wrapper').css("z-index", "0");
@@ -480,9 +512,6 @@
 				$('.logo-ahh-gris').attr("src","./img/ahh-logo.svg");		
 				$('.nav-link').removeClass('nav-link-whitebg');		
 				$('.demo-wrapper').css("z-index", "0");
-			}
-			if(destination.index == 4 ){				
-				$('.demo-wrapper').css("z-index", "1");
 			}
 		},		
     });	

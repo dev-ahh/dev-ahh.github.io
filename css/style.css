@@ -139,6 +139,24 @@ h5{
 	background-position: right 20% bottom 10% ;
 
  }
+
+ #section6 .fp-bg{
+	background-color: #fff;
+    background-image: url(../img/process.svg);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: right 20% bottom 10% ;
+
+ }
+
+ #section7 .fp-bg{
+	background-color: #fff;
+    background-image: url(../img/process-diagram.svg);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center ;
+
+ }
  #section2 .fp-bg{
 	background-color: #fff;
     background-image: url(../img/process-ahh-bg2.jpg);
@@ -148,9 +166,6 @@ h5{
 
  #section4 h2{
     color: #F1F3F4;
- }
- #section4 .fp-bg{
-    background-color: #2A2A2A; 
  }
 
 #fullpage {
