@@ -890,17 +890,17 @@ function svgMapWrapper(svgPanZoom) {
           var item = this.options.data.data[key];
           var value = this.options.data.values[countryID][key];
           item.floatingNumbers && (value = value.toFixed(1));
-          if (value == 0){value = "2,00 - 3,00"}
-          else if (value == 1){value = "1,50 - 2,00"}
-          else if (value == 2){value = "> 3,00"}
-          else if (value == 3){value = "< 1,50"}
+          if (value == 0){value = "USD 2,00 - 3,00"}
+          else if (value == 1){value = "USD 1,50 - 2,00"}
+          else if (value == 2){value = "USD > 3,00"}
+          else if (value == 3){value = "USD < 1,50"}
           item.thousandSeparator &&
             (value = this.numberWithCommas(value, item.thousandSeparator));
           value = item.format
             ? item.format.replace('{0}', '<span>' + value + '</span>')
             : '<span>' + value + '</span>';
           tooltipContentTable +=
-            '<tr><td>' + (item.name || '') + '</td><td>' + value + '</td></tr>';
+            '<tr><td>' + (item.name || '') + '</td><td>' + value + '</td><p>Cost of Green Hydrogen (USD/Kg in 2030)</p></tr>';
         }.bind(this)
       );
       tooltipContentTable += '</table>';

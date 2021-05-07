@@ -1,7 +1,7 @@
 var svgMapDataPersonHeight = {
   data: {
     person: {
-      name: 'USD',
+      name: '',
       format: '{0}/Kg',
       floatingNumbers: 1
     }
