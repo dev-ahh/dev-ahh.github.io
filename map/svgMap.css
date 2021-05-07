@@ -107,7 +107,7 @@
 }
 
 .svgMap-map-wrapper .svgMap-country {
-  stroke: #fff;
+  stroke: #9c9c9c;
   stroke-width: 1;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
