@@ -368,7 +368,7 @@ function svgMapWrapper(svgPanZoom) {
         value = data.values[countryID][data.applyData];
         if (value == 0){color = "#c0c0c0"}
         else if (value == 1){color = "#5bd27f"}
-        else if (value == 2){color = "#e0e0e0"}
+        else if (value == 2){color = "#f1f1f1"}
         else if (value == 3){color = "#00d3e7"}
         element.setAttribute('fill', color);
       }.bind(this)
