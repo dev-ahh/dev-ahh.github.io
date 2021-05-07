@@ -191,8 +191,12 @@
 		scrollingSpeed: 1250,
 		autoScrolling: true,
 		fitToSection:false,
-		v2compatible: false,
-		afterLoad: function(origin, destination, direction){
+		v2compatible: false,		
+		afterRender: function(){
+			$(window).scroll();
+			console.log("Cargado")
+		},
+		afterLoad: function(origin, destination, direction){		
 					},
 		onLeave: function(origin, destination, direction){
 			if(destination.index == 1 || destination.index == 2  ){						

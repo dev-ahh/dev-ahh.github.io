@@ -464,8 +464,11 @@
 		autoScrolling: true,
 		fitToSection:false,
 		v2compatible: false,
-		afterLoad: function(origin, destination, direction){
-				$(window).scroll();
+		afterRender: function(){
+			$(window).scroll();
+			console.log("Cargado")
+		},
+		afterLoad: function(origin, destination, direction){		
 					},
 		onLeave: function(origin, destination, direction){
 			if(destination.index == 1 || destination.index == 3 || destination.index == 4  || destination.index == 5 || destination.index == 6 || destination.index == 7 ){
