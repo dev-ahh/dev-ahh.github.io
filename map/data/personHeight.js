@@ -112,7 +112,7 @@ var svgMapDataPersonHeight = {
     KZ: {person: 0},
     KP: {person: 0},
     PS: {person: 0},
-    CL: {person: 4},
+    CL: {person: 3},
     PR: {person: 0},
     HT: {person: 0},
     CN: {person: 0},
