@@ -230,7 +230,7 @@ h5{
 	text-decoration: underline;
 }
 
-.terms-conditions:hover {
+.terms-conditions:hover, .color-text:hover {
 	background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
