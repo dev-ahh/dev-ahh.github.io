@@ -25,11 +25,6 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-
-
-	<link href="../map/demo.css" rel="stylesheet" type="text/css">
-	<link href="../map/svgMap.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
@@ -68,8 +63,8 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						  <a class="dropdown-item" href="../#project">Overview And Rationale</a>
-						  <a class="dropdown-item" href="../supply-and-demand">Supply And Demand Projections</a>
-						  <a class="dropdown-item" href="#main-producers">Main Producers and Regions</a>
+						  <a class="dropdown-item" href="#supply">Supply And Demand Projections</a>
+						  <a class="dropdown-item" href="../main-producers">Main Producers and Regions</a>
 						  <a class="dropdown-item" href="#"> Project Description</a>
 						</div>
 					</li>
@@ -88,40 +83,44 @@
 
 	<!-- Home -->
 	
-		<!-- Project -->
-		<div class="section" id="section5">
-			<div class="fp-bg"></div>
-	</div>
 
-			
+
+			<!-- Project -->
+			<div class="section" id="section6">
+				<div class="fp-bg"></div>
+				<div class="container d-flex h-25 text-center">
+				</div>
+				<div class="container d-flex h-75 text-center pb-5">
+					<div class="row justify-content-center ">
+						<div class="row">
+							<div class="col-lg-6 ">
+								<h1 class="mb-5 text-dark text-left">Supply & Demand</br>
+									Projections</h1>
+								<p class="text-justify">By 2050, 18% of the world energy demand is expected to be supplied by hydrogen. Hydrogen will be transported through various  vectors adapted to different applications such as energy generation, transportation, chemical, etc.</p>
+								<img src="../img/supply.jpg" class="img-fluid mt-3" alt="Supply & Demand">
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	
+			<!-- Project -->
+			<div class="section" id="section7">
+				<div class="fp-bg"></div>
+				<div class="container d-flex h-25 text-center">
+				</div>
+				<div class="container d-flex h-75 text-center pb-5">
+					<div class="row justify-content-center ">
+						<div class="row">
+						</div>
+					</div>
+				</div>
+		</div>
 
 
 
 </div>
 
-<div class="demo-wrapper">
-		   
-	<div class="demo-container">		   
-	  <div id="svgMapPersonHeight"></div>
-	</div>
-
- </div>
-
- 
-
-
-
-
-
-<div class="main-producers-h1"><h1 class="text-dark ">Main Producers
-	</br>
-	And Regions</h1>
-</div>
-<div class="main-producers-p"> 
-	<p class="">In a decarbonized world, hydrogen demand could supply in 
-		2050 approximately 7.300 TWh of energy in the 4 main hydrogen 
-		consuming regions.</p>
-</div>
 
 
 
@@ -136,25 +135,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script src="../map/svg-pan-zoom.min.js"></script>
-<script src="../map/svgMap.js"></script>
-<script src="../map/data/personHeight.js"></script>
-<script src="../map/local/countriesEN.js"></script>
-<script>
-  new svgMap({
-	targetElementID: 'svgMapPersonHeight',
-	countryNames: svgMapCountryNamesEN,
-	data: svgMapDataPersonHeight,
-	colorMin: '#5bd27f',
-	colorMax: '#00d3e7',
-	hideFlag: true,
-	noDataText: 'No Data'
-  });
-</script>
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
-		anchors: ['main-producers'],
+		anchors: ['supply', 'energy'],
 		licenseKey: '47E5E01E-38AE47EB-BB1C4B0C-E6561B86',
         verticalCentered: false,
 		navigation:false,
@@ -177,12 +161,6 @@
 		afterLoad: function(origin, destination, direction){		
 					},
 		onLeave: function(origin, destination, direction){
-			if(destination.index == 1 || destination.index == 2  ){						
-				$('#fullpage').css("z-index", "101");
-			}
-			if(destination.index == 0  ){
-				$('#fullpage').css("z-index", "0");
-			}
 		},	
     });	
 	
