@@ -200,6 +200,15 @@
 		$('#fullpage').show();
 		$('#section0 .fp-bg').show();		
 	});
+		// A $( document ).ready() block.
+		$( document ).ready(function() {
+		console.log( "ready!" );
+		window.scroll({
+				top: 1,
+				left: 1,
+				behavior: 'smooth'
+			});
+	});
 </script>
 
 </body>
