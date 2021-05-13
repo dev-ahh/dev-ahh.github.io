@@ -155,8 +155,13 @@
 		fitToSection:false,
 		v2compatible: false,		
 		afterRender: function(){
-			$(window).scroll();
+			
 			console.log("Cargado")
+			window.scroll({
+				top: 1,
+				left: 1,
+				behavior: 'smooth'
+			});
 		},
 		afterLoad: function(origin, destination, direction){		
 					},
