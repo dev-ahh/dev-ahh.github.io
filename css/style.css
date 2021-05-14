@@ -275,6 +275,15 @@ h5{
 	height: 500px
 }
 
+.supply-energy {
+	background-image: url(/img/supply-energy.svg);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+	margin-top: 20px;
+	height: 250px
+}
+
 .menu-icon {
 	background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
 	-webkit-background-clip: text;
