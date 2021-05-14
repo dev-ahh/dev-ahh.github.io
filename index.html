@@ -476,9 +476,11 @@
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
+		v2compatible: true,
 		anchors: ['home', 'about', 'process', 'project', 'contact'],
 		licenseKey: '47E5E01E-38AE47EB-BB1C4B0C-E6561B86',
         verticalCentered: false,
+		menu: '#menu',
 		navigation:true,
         showActiveTooltip: true,
 		parallax: true,
@@ -502,19 +504,25 @@
 			});
 		},
 		afterLoad: function(origin, destination, direction){		
-					},
+            console.log("afterRender");
+		},
 		onLeave: function(origin, destination, direction){
-			if(destination.index == 1 || destination.index == 3 || destination.index == 4  || destination.index == 5 || destination.index == 6 || destination.index == 7 ){
+
+			if( destination.index == 1 || destination.index == 3 || destination.index == 4  || destination.index == 5 || destination.index == 6 || destination.index == 7 ){
 				$('.logo-ahh-gris').attr("src","./img/ahh-logo-blanco.svg");		
 				$('.nav-link').addClass('nav-link-whitebg');						
 				$('.demo-wrapper').css("z-index", "0");
 			}
-			if(destination.index == 0 || destination.index == 2 ){
+			if( destination.index == 0 || destination.index == 2 ){
 				$('.logo-ahh-gris').attr("src","./img/ahh-logo.svg");		
 				$('.nav-link').removeClass('nav-link-whitebg');		
 				$('.demo-wrapper').css("z-index", "0");
 			}
-		},		
+		},
+        afterLoad: function(origin, destination, direction){
+			fullpage_api.reBuild();
+		}
+		
     });	
 	
 	
@@ -525,15 +533,6 @@
 	$('#section0 .fp-bg').imagesLoaded({ background: true },function() {
 		$('#fullpage').show();
 		$('#section0 .fp-bg').show();		
-	});
-	// A $( document ).ready() block.
-	$( document ).ready(function() {
-		console.log( "ready!" );
-		window.scroll({
-				top: 1,
-				left: 1,
-				behavior: 'smooth'
-			});
 	});
 </script>
 

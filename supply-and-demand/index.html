@@ -167,6 +167,10 @@
 					},
 		onLeave: function(origin, destination, direction){
 		},	
+		
+        afterLoad: function(origin, destination, direction){
+			fullpage_api.reBuild();
+		}
     });	
 	
 	

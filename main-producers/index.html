@@ -189,6 +189,9 @@
 				$('#fullpage').css("z-index", "0");
 			}
 		},	
+        afterLoad: function(origin, destination, direction){
+			fullpage_api.reBuild();
+		}
     });	
 	
 	
