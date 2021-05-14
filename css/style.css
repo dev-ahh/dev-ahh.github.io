@@ -158,6 +158,16 @@ h5{
 	background-position: center ;
 
  }
+
+ #section8 .fp-bg{
+	background-color: #fff;
+    background-image: url(../img/test.jpg);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center ;
+
+ }
+
  #section2 .fp-bg{
 	background-color: #fff;
     background-image: url(../img/process-ahh-bg2.jpg);
@@ -190,6 +200,61 @@ h5{
 
 .rounded-process {
 	border-radius: 30px;
+}
+
+.leyenda-mapa > ul {
+	list-style: none; 
+  }
+  
+.leyenda-mapa > ul li::before {
+	content: "■";  
+	margin-right: 10px; 
+	font-size: 18px;
+}
+
+.color-1::before {
+	color: #00d3e7;
+}
+
+.color-2::before {
+	color: #cacaca;
+}
+
+.color-3::before {
+	color: #5bd27f;
+}
+
+.color-4::before {
+	color: #fff;
+} 
+
+
+.leyenda-mapa{
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	color: #2a2a2a;	
+	z-index: 999;
+	background: rgba(212, 212, 212, 0.5);
+	border: solid 1px rgb(0, 0, 0, 0.1);
+	border-radius: 5px;
+    position: absolute;
+    right: 100px;
+	bottom: 50px;
+}
+
+.project-overview-rationale li{
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	color: #383838;	
+}
+
+.project-overview-rationale h3{
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #383838;	
 }
 
 .rounded-process-div {
@@ -389,6 +454,21 @@ p a:hover {
 	top: 350px;
 	left: 250px;
 	width: 300px;
+}
+
+.icons-global-energy {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100px;
+}
+
+.liquid-hydrogen-element {
+	background-image: url(/img/assets/liquid-hydrogen-element.svg);
+}
+
+.liquid-hydrogen-icon {
+	background-image: url(/img/assets/liquid-hydrogen-icon.svg);
 }
 
 
