@@ -184,8 +184,21 @@ h5{
 	height: 175px;
 }
 
+.modal-lg-2 {
+	max-width: 80% !important;
+}
+
 .rounded-process {
 	border-radius: 30px;
+}
+
+.rounded-process-div {
+	background-image: url(/img/process-iso.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+	margin-top: 20px;
+	height: 500px;
 }
 
 .menu-icon {
@@ -377,6 +390,9 @@ p a:hover {
 	h3 {
 		font-size: 15px;
 	}
+	.modal-lg-2 {
+		max-width: 95% !important;
+	}
 
 }
 
@@ -400,11 +416,11 @@ p a:hover {
 	h3 {
 		font-size: 14px;
 	}
-	.rounded-process-div {
-		margin-top: 6rem !important;
-	}
 	.map-margin{
 		height: 150px;
+	}
+	.modal-lg-2 {
+		max-width: 95% !important;
 	}
 
 }
