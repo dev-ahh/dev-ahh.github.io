@@ -23,7 +23,7 @@ function svgMapWrapper(svgPanZoom) {
       zoomScaleSensitivity: 0.2,
 
       // Zoom with mousewheel
-      mouseWheelZoomEnabled: false,
+      mouseWheelZoomEnabled: true,
 
       // Data colors
       colorMax: '#5bd27f',
@@ -791,8 +791,8 @@ function svgMapWrapper(svgPanZoom) {
 
     // Init pan zoom
     this.mapPanZoom = svgPanZoom(this.mapImage, {
-      zoomEnabled: false,
-      panEnabled: false,
+      zoomEnabled: true,
+      panEnabled: true,
       fit: true,
       center: true,
       minZoom: this.options.minZoom,

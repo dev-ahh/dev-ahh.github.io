@@ -201,6 +201,15 @@ h5{
 	height: 500px;
 }
 
+.regional-energy {
+	background-image: url(/img/regional-energy.svg);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+	margin-top: 20px;
+	height: 500px
+}
+
 .menu-icon {
 	background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
 	-webkit-background-clip: text;
@@ -318,6 +327,25 @@ p a:hover {
 .margin-bottom-learn {
 	margin-bottom: 125px;
 }
+
+.boton-informacion {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	z-index: 50;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 50px;
+}
+
+.boton-informacion:hover {
+	background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
+	-webkit-transition: all ease-in-out 250ms;
+    -moz-transition: all ease-in-out 250ms;
+    -o-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
+}
+
 
 .about-member > button {
   background-color: transparent;
