@@ -94,7 +94,7 @@ h2{
 p {
 	font-family: 'Jost', sans-serif;
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 14px;
 	color: #383838;	
 }
 h3{
@@ -109,6 +109,10 @@ h4{
 }
 h5{
 
+}
+
+#section1 p {
+	font-size: 13px !important;
 }
 
 .mapa{
