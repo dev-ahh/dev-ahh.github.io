@@ -167,7 +167,7 @@ h5{
 	background-color: #fff;
     background-image: url(../img/regions.svg);
 	background-repeat: no-repeat;
-	background-size: 90%;
+	background-size: 85%;
 	background-position: center ;
 
  }
@@ -194,8 +194,8 @@ h5{
 }
 
 .image-about {
-	width: 175px;
-	height: 175px;
+	width: 140px;
+	height: 140px;
 }
 
 .modal-lg-2 {
@@ -292,7 +292,7 @@ h5{
 	background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
-	margin-top: 20px;
+	margin-top: -145px;
 	height: 500px;
 }
 
@@ -302,7 +302,7 @@ h5{
     background-repeat: no-repeat;
     background-position: top;
 	margin-top: 20px;
-	height: 500px
+	height: 425px
 }
 
 .supply-energy {
