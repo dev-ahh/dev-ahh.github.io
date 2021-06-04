@@ -585,6 +585,21 @@ p a:hover {
 		margin-left: 5px !important;
 		margin-right: 5px !important;
 	}
+	.slick-aboutmember{
+		margin-top: -25px;
+	}
+	.slick-track .about-member{
+		display: block !important;
+		margin-left: 5px !important;
+		margin-right: 5px !important;
+	}
+	.h-75{
+		height: auto !important;
+	}
+	.image-about {
+		width: 100px;
+		height: 100px;
+	}
 }
 
 
