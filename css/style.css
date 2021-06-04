@@ -571,6 +571,20 @@ p a:hover {
 	.align-self-center {
 		align-self: unset !important;
 	}
+	.terms-conditions-p{
+		font-size: 10px !important;
+		line-height: 10px !important;
+		margin-bottom: 5px !important;
+		margin-left: 5px !important;
+		margin-right: 5px !important;
+	}
+	.terms-conditions-h2{
+		line-height: 10px !important;
+		margin-top: 5px !important;
+		margin-bottom: 5px !important;
+		margin-left: 5px !important;
+		margin-right: 5px !important;
+	}
 }
 
 
