@@ -552,6 +552,19 @@ p a:hover {
 	p {
 		font-size: 13px !important;
 	}
+	.map-div{
+		height: 160px !important;
+	}
+	.mapa {
+		width: auto !important;
+		height: 150px !important;
+	}
+	.margin-bottom-logo{
+		margin-bottom: 25px !important
+	}
+	.text-mobile-justify{
+		text-align: unset !important;
+	}
 }
 
 
