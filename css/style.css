@@ -513,12 +513,33 @@ p a:hover {
 
 @media (max-width: 576px) {
 	h1 {
-		font-size: 35px;
+		font-size: 35px !important;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
 	h3 {
-		font-size: 12px;
+		font-size: 15px !important;
+	}
+	h2 {
+
+	}
+	.margin-bottom-learn {
+		margin-bottom: 20px !important;
+	}
+	#fp-nav {
+		display: none !important;
+	}
+	.logo-ahh-gris {
+		height: 65px !important;
+	}
+	.navbar-bg {
+		background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
+		margin-left: 50px !important;
+		margin-right: 50px !important;
+		border-radius: 20px !important;
+	}
+	.nav-link:hover, .dropdown-item:hover {
+		-webkit-text-fill-color: unset !important;
 	}
 }
 
