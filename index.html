@@ -581,12 +581,14 @@
 	$(document).ready(function(){
 		$('.slick-aboutmember').slick({
 		slidesToScroll: 1,
+		initialSlide: 2,
+		mobileFirst: true,		
+		draggable: false,
 		autoplay: true,
 		autoplaySpeed: 2000,
 		centerMode: true,
 		centerPadding: '5px',
 		slidesToShow: 1,
-		draggable: false,
 		});
 	});
 	
