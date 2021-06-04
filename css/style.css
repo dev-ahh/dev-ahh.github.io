@@ -565,6 +565,12 @@ p a:hover {
 	.text-mobile-justify{
 		text-align: unset !important;
 	}
+	.about-member{
+		display: none;
+	}
+	.align-self-center {
+		align-self: unset !important;
+	}
 }
 
 
