@@ -539,8 +539,6 @@
 		fitToSection:false,
 		v2compatible: false,
 		afterRender: function(){
-			
-			console.log("Cargado")
 			window.scroll({
 				top: 1,
 				left: 1,
@@ -592,6 +590,62 @@
 		swipe: false,
 		});
 	});
+
+	if($(window).width() < 767)
+	{
+		fullpage_api.destroy('all');
+		$('#section3').after('<div class="section" id="section9"><div class="fp-bg"></div></div>');
+			var myFullpage = new fullpage('#fullpage', {
+		v2compatible: true,
+		anchors: ['home', 'about', 'process', 'project', 'project-description', 'contact'],
+		licenseKey: '47E5E01E-38AE47EB-BB1C4B0C-E6561B86',
+        verticalCentered: false,
+		menu: '#menu',
+		navigation:true,
+        showActiveTooltip: true,
+		parallax: true,
+		parallaxKey: 'Z2l0aHViLmlvXzZmMGNHRnlZV3hzWVhnPTB4cA==',
+		parallaxOptions: {
+			type: 'reveal',
+			percentage: 62,
+			property: 'translate'
+		},
+		scrollingSpeed: 1250,
+		autoScrolling: true,
+		fitToSection:false,
+		v2compatible: false,
+		afterRender: function(){
+			window.scroll({
+				top: 1,
+				left: 1,
+				behavior: 'smooth'
+			});
+		},
+		afterLoad: function(origin, destination, direction){		
+            console.log("afterRender");
+		},
+		onLeave: function(origin, destination, direction){
+
+			if( destination.index == 1 || destination.index == 3 || destination.index == 4  || destination.index == 5 || destination.index == 6 || destination.index == 7 ){
+				$('.logo-ahh-gris').attr("src","./img/ahh-logo-blanco.svg");		
+				$('.nav-link').addClass('nav-link-whitebg');						
+				$('.demo-wrapper').css("z-index", "0");
+			}
+			if( destination.index == 0 || destination.index == 2 ){
+				$('.logo-ahh-gris').attr("src","./img/ahh-logo.svg");		
+				$('.nav-link').removeClass('nav-link-whitebg');		
+				$('.demo-wrapper').css("z-index", "0");
+			}
+		},
+        afterLoad: function(origin, destination, direction){
+			fullpage_api.reBuild();
+		}
+		
+    });	
+
+	} else {
+		console.log("COMPUTADOR");
+	}
 	
 </script>
 
