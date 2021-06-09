@@ -183,15 +183,17 @@ h5{
 	background-color: #fff;
     background-image: url(../img/process-overview-1mobile.svg);
 	background-repeat: no-repeat;
-	background-size: 95%;
-	background-position: center;
+	background-size: 95%;	
+	background-position-x: center;
+	background-position-y: 70%;
  }
  #section10 .fp-bg{
 	background-color: #fff;
     background-image: url(../img/process-overview-2mobile.svg);
 	background-repeat: no-repeat;
 	background-size: 95%;
-	background-position: center;
+	background-position-x: center;
+	background-position-y: 70%;
  }
 
  #section4 h2{
@@ -528,15 +530,18 @@ p a:hover {
 
 @media (max-width: 576px) {
 	h1 {
-		font-size: 35px !important;
+		font-size: 30px !important;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
 	h3 {
-		font-size: 15px !important;
+		font-size: 13px !important;
+	}
+	.subtitulo{
+		margin-bottom: -15px;
 	}
 	.margin-bottom-learn {
-		margin-bottom: 20px !important;
+		margin-bottom: 5px !important;
 	}
 	#fp-nav {
 		display: none !important;
@@ -558,14 +563,15 @@ p a:hover {
     	margin-right: 15px;
 	}
 	.title-margin{
-		margin-top: -40px;
-		margin-bottom: 35px !important;
+		margin-top: -20px;
+		margin-bottom: 20px !important;
 	}
 	.rounded-process-div {
 		margin-top: -120px;
 	}
 	p {
 		font-size: 13px !important;
+		line-height: 17px !important;
 	}
 	.map-div{
 		height: 160px !important;
@@ -600,9 +606,6 @@ p a:hover {
 		margin-left: 5px !important;
 		margin-right: 5px !important;
 	}
-	.slick-aboutmember{
-		margin-top: -25px;
-	}
 	.slick-track .about-member{
 		display: block !important;
 		margin-left: 5px !important;
@@ -612,8 +615,8 @@ p a:hover {
 		height: auto !important;
 	}
 	.image-about {
-		width: 100px;
-		height: 100px;
+		width: 100px !important;
+		height: 100px !important;
 	}
 }
 
