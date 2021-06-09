@@ -595,9 +595,10 @@
 	{
 		fullpage_api.destroy('all');
 		$('#section3').after('<div class="section" id="section9"><div class="fp-bg"></div></div>');
+		$('#section9').after('<div class="section" id="section10"><div class="fp-bg"></div></div>');
 			var myFullpage = new fullpage('#fullpage', {
 		v2compatible: true,
-		anchors: ['home', 'about', 'process', 'project', 'project-description', 'contact'],
+		anchors: ['home', 'about', 'process', 'project', 'project-description-1', 'project-description-2', 'contact'],
 		licenseKey: '47E5E01E-38AE47EB-BB1C4B0C-E6561B86',
         verticalCentered: false,
 		menu: '#menu',
@@ -626,7 +627,7 @@
 		},
 		onLeave: function(origin, destination, direction){
 
-			if( destination.index == 1 || destination.index == 3 || destination.index == 4  || destination.index == 5 || destination.index == 6 || destination.index == 7 ){
+			if( destination.index == 1 || destination.index == 3 || destination.index == 4  || destination.index == 5 || destination.index == 6 || destination.index == 7 || destination.index == 8 || destination.index == 9 ){
 				$('.logo-ahh-gris').attr("src","./img/ahh-logo-blanco.svg");		
 				$('.nav-link').addClass('nav-link-whitebg');						
 				$('.demo-wrapper').css("z-index", "0");
@@ -644,7 +645,6 @@
     });	
 
 	} else {
-		console.log("COMPUTADOR");
 	}
 	
 </script>
