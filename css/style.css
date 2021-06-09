@@ -557,6 +557,9 @@ p a:hover {
 		bottom: 50% !important;
 		transform: translateY(70%) !important;
 	}
+	.modal-about-member{
+		display: block !important;
+	}
 	.navbar-bg {
 		background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
 		margin-left: 50px !important;
