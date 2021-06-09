@@ -541,13 +541,18 @@ p a:hover {
 		margin-bottom: -15px;
 	}
 	.margin-bottom-learn {
-		margin-bottom: 5px !important;
+		margin-bottom: unset !important;
 	}
 	#fp-nav {
 		display: none !important;
 	}
 	.logo-ahh-gris {
 		height: 65px !important;
+	}
+	.fixed-bottom{
+		position: fixed !important;
+		bottom: 50% !important;
+		transform: translateY(70%) !important;
 	}
 	.navbar-bg {
 		background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
