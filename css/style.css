@@ -546,6 +546,9 @@ p a:hover {
 	#fp-nav {
 		display: none !important;
 	}
+	#section3 .fp-bg {
+		display: none !important;
+	}
 	.logo-ahh-gris {
 		height: 65px !important;
 	}
