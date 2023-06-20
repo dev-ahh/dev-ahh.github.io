@@ -207,7 +207,7 @@
 		navigation:false,
         showActiveTooltip: true,
 		parallax: true,
-		parallaxKey: 'Z2l0aHViLmlvXzZmMGNHRnlZV3hzWVhnPTB4cA==',
+		parallaxKey: 'YXRhY2FtYWh5ZHJvZ2VuaHViLmNvbV9yVVNjR0Z5WVd4c1lYZz1XOWo=',
 		parallaxOptions: {
 			type: 'reveal',
 			percentage: 62,
@@ -250,15 +250,80 @@
 		$('#fullpage').show();
 		$('#section0 .fp-bg').show();		
 	});
-		// A $( document ).ready() block.
-		$( document ).ready(function() {
-		console.log( "ready!" );
-		window.scroll({
+
+	$(document).ready(function(){
+		$('.slick-aboutmember').slick({
+		slidesToScroll: 1,
+		initialSlide: 2,
+		mobileFirst: true,		
+		draggable: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		focusOnSelect: false,
+		pauseOnFocus: false,
+		centerMode: true,
+		centerPadding: '5px',
+		slidesToShow: 1,
+		swipe: false,
+		});
+	});
+
+	if($(window).width() < 767)
+	{
+		$('.demo-wrapper').addClass('opacity-0');
+		fullpage_api.destroy('all');
+		$('#section5').after('<div class="section" id="section12"><div class="fp-bg"></div></div>');
+		$('.demo-wrapper').removeClass('opacity-0');
+		$('.main-producers-p, .leyenda-mapa').addClass('d-none');	
+			var myFullpage = new fullpage('#fullpage', {
+		v2compatible: true,
+		anchors: ['main-producers', 'main-producers-map'],
+		licenseKey: '47E5E01E-38AE47EB-BB1C4B0C-E6561B86',
+        verticalCentered: false,
+		menu: '#menu',
+		navigation:true,
+        showActiveTooltip: true,
+		parallax: true,
+		parallaxKey: 'YXRhY2FtYWh5ZHJvZ2VuaHViLmNvbV9yVVNjR0Z5WVd4c1lYZz1XOWo=',
+		parallaxOptions: {
+			type: 'reveal',
+			percentage: 62,
+			property: 'translate'
+		},
+		scrollingSpeed: 1250,
+		autoScrolling: true,
+		fitToSection:false,
+		v2compatible: false,
+		afterRender: function(){
+			window.scroll({
 				top: 1,
 				left: 1,
 				behavior: 'smooth'
 			});
-	});
+		},
+		afterLoad: function(origin, destination, direction){		
+            console.log("afterRender");
+		},
+		onLeave: function(origin, destination, direction){
+
+		if( destination.index == 1 ){	
+			$('.main-producers-p, .leyenda-mapa').removeClass('d-none');
+			$('.demo-wrapper').addClass('opacity-0');
+			
+		}
+		if( destination.index == 0 ){				
+			$('.main-producers-p, .leyenda-mapa').addClass('d-none');			
+			$('.demo-wrapper').removeClass('opacity-0');
+		}
+		},
+        afterLoad: function(origin, destination, direction){
+			fullpage_api.reBuild();
+		}
+		
+    });	
+
+	} else {
+	}
 </script>
 
 </body>

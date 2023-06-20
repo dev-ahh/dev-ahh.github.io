@@ -791,14 +791,14 @@ function svgMapWrapper(svgPanZoom) {
 
     // Init pan zoom
     this.mapPanZoom = svgPanZoom(this.mapImage, {
-      zoomEnabled: false,
-      panEnabled: false,
+      zoomEnabled: true,
+      panEnabled: true,
       fit: true,
       center: true,
       minZoom: this.options.minZoom,
       maxZoom: this.options.maxZoom,
       zoomScaleSensitivity: this.options.zoomScaleSensitivity,
-      controlIconsEnabled: false,
+      controlIconsEnabled: true,
       mouseWheelZoomEnabled: this.options.mouseWheelZoomEnabled, // TODO Only with key pressed
       onZoom: function () {
         me.setControlStatuses();

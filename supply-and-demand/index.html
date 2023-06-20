@@ -114,7 +114,7 @@
 							<div class="col-lg-6 ">
 								<h1 class="mb-5 text-dark text-left">Supply & Demand</br>
 									Projections</h1>
-								<p class="text-justify">By 2050, 18% of the world energy demand is expected to be supplied by hydrogen. Hydrogen will be transported through various  vectors adapted to different applications such as energy generation, transportation, chemical, etc.</p>
+								<p class="text-justify text-margin">By 2050, 18% of the world energy demand is expected to be supplied by hydrogen. Hydrogen will be transported through various  vectors adapted to different applications such as energy generation, transportation, chemical, etc.</p>
 								<img src="../img/supply.jpg" class="img-fluid mt-3 w-100" alt="Supply & Demand">
 							</div>
 						</div>
@@ -191,7 +191,7 @@
 		navigation:false,
         showActiveTooltip: true,
 		parallax: true,
-		parallaxKey: 'Z2l0aHViLmlvXzZmMGNHRnlZV3hzWVhnPTB4cA==',
+		parallaxKey: 'YXRhY2FtYWh5ZHJvZ2VuaHViLmNvbV9yVVNjR0Z5WVd4c1lYZz1XOWo=',
 		parallaxOptions: {
 			type: 'reveal',
 			percentage: 62,
@@ -238,6 +238,64 @@
 				behavior: 'smooth'
 			});
 	});
+	$(document).ready(function(){
+		$('.slick-aboutmember').slick({
+		slidesToScroll: 1,
+		initialSlide: 2,
+		mobileFirst: true,		
+		draggable: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		focusOnSelect: false,
+		pauseOnFocus: false,
+		centerMode: true,
+		centerPadding: '5px',
+		slidesToShow: 1,
+		swipe: false,
+		});
+	});
+
+	if($(window).width() < 767)
+	{
+		fullpage_api.destroy('all');
+		$('#section6').after('<div class="section" id="section11"><div class="fp-bg"></div></div>');
+			var myFullpage = new fullpage('#fullpage', {
+		v2compatible: true,
+		anchors: ['supply', 'supply-diagram', 'energy','supply-map-projections'],
+		licenseKey: '47E5E01E-38AE47EB-BB1C4B0C-E6561B86',
+        verticalCentered: false,
+		menu: '#menu',
+		navigation:true,
+        showActiveTooltip: true,
+		parallax: true,
+		parallaxKey: 'YXRhY2FtYWh5ZHJvZ2VuaHViLmNvbV9yVVNjR0Z5WVd4c1lYZz1XOWo=',
+		parallaxOptions: {
+			type: 'reveal',
+			percentage: 62,
+			property: 'translate'
+		},
+		scrollingSpeed: 1250,
+		autoScrolling: true,
+		fitToSection:false,
+		v2compatible: false,
+		afterRender: function(){
+			window.scroll({
+				top: 1,
+				left: 1,
+				behavior: 'smooth'
+			});
+		},
+		afterLoad: function(origin, destination, direction){		
+            console.log("afterRender");
+		},
+        afterLoad: function(origin, destination, direction){
+			fullpage_api.reBuild();
+		}
+		
+    });	
+
+	} else {
+	}
 </script>
 
 </body>

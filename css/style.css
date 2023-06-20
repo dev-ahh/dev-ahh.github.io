@@ -183,17 +183,25 @@ h5{
 	background-color: #fff;
     background-image: url(../img/process-overview-1mobile.svg);
 	background-repeat: no-repeat;
-	background-size: 95%;	
-	background-position-x: center;
-	background-position-y: 70%;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: 85%;
  }
  #section10 .fp-bg{
 	background-color: #fff;
     background-image: url(../img/process-overview-2mobile.svg);
 	background-repeat: no-repeat;
-	background-size: 95%;
-	background-position-x: center;
-	background-position-y: 70%;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: 85%;
+ }
+ #section11 .fp-bg{
+	background-color: #fff;
+    background-image: url(../img/process.svg);
+    background-repeat: no-repeat;
+    background-size: 185%;
+    background-position-x: 90%;
+    background-position-y: 60%;
  }
 
  #section4 h2{
@@ -211,8 +219,12 @@ h5{
 }
 
 .image-about {
-	width: 140px;
-	height: 140px;
+    width: auto;
+    height: 16vh;
+}
+
+.image-about-modal{
+	height: 80%;
 }
 
 .modal-lg-2 {
@@ -311,6 +323,14 @@ h5{
     background-position: top;
 	margin-top: -145px;
 	height: 500px;
+}
+.rounded-process-img{
+	position: absolute;
+    bottom: 0px;
+    height: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+	display: none;
 }
 
 .regional-energy {
@@ -530,15 +550,20 @@ p a:hover {
 
 @media (max-width: 576px) {
 	h1 {
-		font-size: 30px !important;
+		font-size: 25px !important;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
+	.slick-slider{
+		margin-top: -25px !important;
+	}
 	h3 {
 		font-size: 13px !important;
+		line-height: 21px !important;
+		margin-bottom: -15px !important;
 	}
 	.subtitulo{
-		margin-bottom: -15px;
+		margin-bottom: -5px;
 	}
 	.margin-bottom-learn {
 		margin-bottom: unset !important;
@@ -548,6 +573,38 @@ p a:hover {
 	}
 	#section3 .fp-bg {
 		display: none !important;
+	}
+	#section7 .fp-bg {
+		background-size: 130% !important;
+	}
+	#section8 .fp-bg{
+		background-size: 120%;
+		background-position-x: 85%;
+		background-position-y: 50%;
+	 }
+	 .main-producers-h1 {
+		top: 100px;
+		left: 0px;
+	} 
+	.main-producers-p {
+		top: 170px;
+		margin-left: 15px;
+		width: 100% !important;
+		left: 0px !important;
+		padding-right: 45px !important;
+	}
+	.boton-informacion {
+		bottom: 15px;
+	}
+	.leyenda-mapa {
+		margin-left: 15px;
+		left: 0px;
+		padding-right: 45px !important;
+    	width: 90%;
+		bottom: 15%;
+	}
+	.regional-energy {
+		margin: 10px !important;
 	}
 	.logo-ahh-gris {
 		height: 65px !important;
@@ -560,6 +617,10 @@ p a:hover {
 	.modal-about-member{
 		display: block !important;
 	}
+	#section6 .fp-bg{
+		background-image: none;
+	
+	 }
 	.navbar-bg {
 		background: linear-gradient(to right, #00d3e7 0%, #5bd27f 100%); !important;
 		margin-left: 50px !important;
@@ -568,6 +629,11 @@ p a:hover {
 	}
 	.nav-link:hover, .dropdown-item:hover {
 		-webkit-text-fill-color: unset !important;
+	}
+	.supply-energy {
+		background-image: url(/img/supply-energy-phone.svg);
+		margin: 20px !important;
+		height: 250px;
 	}
 	.text-margin{
 		margin-left: 15px;
@@ -578,18 +644,41 @@ p a:hover {
 		margin-bottom: 20px !important;
 	}
 	.rounded-process-div {
-		margin-top: -120px;
+		display: none;
+	}
+	.rounded-process-img {
+		display: block;
 	}
 	p {
 		font-size: 13px !important;
 		line-height: 17px !important;
 	}
 	.map-div{
-		height: 160px !important;
+		height: 125px !important;
+	}
+	.demo-wrapper {
+		position: absolute !important;
+		bottom: 0px !important;
+		height: 100% !important;
+		width: 100% !important;
+	}
+	.svgMap-map-wrapper .svgMap-map-image, .demo-container, #svgMapPersonHeight{
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.svgMap-map-wrapper {
+		padding-top: 0px !important;
+		height: 100% !important;
+	}
+	.opacity-0{
+		opacity: 0;
 	}
 	.mapa {
 		width: auto !important;
-		height: 150px !important;
+		height: 125px !important;
+	}
+	.leyenda-mapa h3{
+		font-size: 11px !important;
 	}
 	.margin-bottom-logo{
 		margin-bottom: 25px !important
@@ -601,8 +690,8 @@ p a:hover {
 		display: none;
 	}
 	.descripcion-about-member{
-		font-size: 12px !important;
-		line-height: 14px !important;
+		font-size: 10px !important;
+		line-height: 12px !important;
 	}
 	.align-self-center {
 		align-self: unset !important;
@@ -630,8 +719,8 @@ p a:hover {
 		height: auto !important;
 	}
 	.image-about {
-		width: 100px !important;
-		height: 100px !important;
+		width: 90px !important;
+		height: 90px !important;
 	}
 }
 
@@ -641,8 +730,8 @@ p a:hover {
 		max-width: 900px;
 	}
 	.image-about {
-		width: 100px;
-		height: 100px;
+		width: auto;
+		height: 14vh;
 	}
 	h1 {
 		font-size: 45px;
@@ -661,8 +750,8 @@ p a:hover {
 		max-width: 1100px;
 	}
 	.image-about {
-		width: 130px;
-		height: 130px;
+		width: auto;
+		height: 14vh;
 	}
 	.margin-bottom-learn {
 		margin-bottom: 75px;
@@ -671,13 +760,13 @@ p a:hover {
 		font-size: 45px;
 	}
 	h2 {
-		font-size: 20px;
+		font-size: 15px;
 	}
 	h3 {
 		font-size: 14px;
 	}
 	.map-margin{
-		height: 150px;
+		height: 120px;
 	}
 	.modal-lg-2 {
 		max-width: 95% !important;
